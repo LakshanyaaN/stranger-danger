@@ -153,10 +153,10 @@ System remains locked until correct code is entered
 
 ## Architecture
 
-- **OpenCV** — Face detection and LBPH recognition
-- **Python threading** — Background monitoring loop
-- **PyGame** — Fullscreen lock interface
-- **PyInstaller** — Packaging executable for deployment
+- **OpenCV**: Face detection and LBPH recognition
+- **Python threading**: Background monitoring loop
+- **PyGame**: Fullscreen lock interface
+- **PyInstaller**: Packaging executable for deployment
 
 ---
 
@@ -205,5 +205,5 @@ The countdown mechanism is inspired by the number sequence motif from *Tokyo Gho
 
 ## License
 
-MIT License — free to use, modify, and distribute.
+MIT License : free to use, modify, and distribute.
 
