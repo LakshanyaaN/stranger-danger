@@ -1,3 +1,10 @@
+![Python](https://img.shields.io/badge/Python-3.8+-blue)
+![OpenCV](https://img.shields.io/badge/OpenCV-4.x-green)
+![Platform](https://img.shields.io/badge/Platform-Windows-lightgrey)
+![License](https://img.shields.io/badge/License-MIT-yellow)
+![Status](https://img.shields.io/badge/Status-Active-success)
+![Contributions](https://img.shields.io/badge/Contributions-Welcome-orange)
+
 # Stranger Danger 
 
 Real-time facial authentication system that automatically locks your screen when an unrecognized face is detected.
@@ -8,7 +15,9 @@ Built using OpenCV, this project focuses on local, privacy-first monitoring to p
 
 ## Overview
 
-Stranger Danger runs in the background and continuously monitors your webcam feed. When an unknown face — or no face — is detected for a defined duration, the system initiates a warning sequence followed by a full-screen lock mechanism.
+Originally built as a personal privacy experiment, this project evolved into a real-time monitoring system using classical computer vision techniques.
+
+Stranger Danger runs in the background and continuously monitors your webcam feed. When an unknown face or no face is detected for a defined duration, the system initiates a warning sequence followed by a full-screen lock mechanism.
 
 The system is fully local, requires no cloud services, and stores all facial data on-device.
 
@@ -72,6 +81,7 @@ Edit the following files and replace the placeholder value:
 ```python
 CANCEL_CODE = "your_code_here"
 ```
+> Note: For better security, consider storing sensitive values using environment variables instead of hardcoding.
 
 Ensure the same code is used consistently across:
 - `kaneki_watcher.py`
@@ -159,6 +169,7 @@ System remains locked until correct code is entered
 - **Python threading**: Background monitoring loop
 - **PyGame**: Fullscreen lock interface
 - **PyInstaller**: Packaging executable for deployment
+- The system operates at approximately ~6 FPS to balance responsiveness and CPU usage on standard hardware
 
 ---
 
@@ -169,7 +180,7 @@ System remains locked until correct code is entered
 - Not resistant to spoofing (e.g., photos or videos)
 - Requires continuous webcam access
 - Windows-only due to system-level behavior
-
+- The fullscreen lock/countdown interface may not be reliably captured via standard screen recording or screenshot tools due to its rendering behavior
 ---
 
 ## Security Notes
@@ -201,7 +212,7 @@ To run the system automatically on startup:
 
 ## Inspiration
 
-The countdown mechanism is inspired by the number sequence motif from *Tokyo Ghoul*, adapted here as a disruptive lock-screen experience.
+In Tokyo Ghoul, Ken Kaneki is subjected to repeated torture and conditioned to count down from 1000 in decrements of 7 to preserve his sanity. This project adapts that sequence as its lockdown mechanism; an accelerating, fullscreen number cascade designed to disorient and deny access.
 
 ---
 
@@ -209,3 +220,4 @@ The countdown mechanism is inspired by the number sequence motif from *Tokyo Gho
 
 MIT License : free to use, modify, and distribute.
 
+Built by [Lakshanya](https://github.com/LakshanyaaN)
