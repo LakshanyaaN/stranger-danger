@@ -1,4 +1,4 @@
-# Stranger Danger 👁️
+# Stranger Danger 
 
 Real-time facial authentication system that automatically locks your screen when an unrecognized face is detected.
 
@@ -27,11 +27,16 @@ The system is fully local, requires no cloud services, and stores all facial dat
 ---
 
 ## Demo
+## Demo
 
-> Add screenshots or a GIF here showing:
-> - Face detection in action
-> - Warning prompt
-> - Lock screen interface
+### Face Detection
+![Detection](assets/detection.png)
+
+### Warning Prompt
+![Warning](assets/warning.png)
+
+### Lock Screen
+![Lock](assets/lock.png)
 
 ---
 
