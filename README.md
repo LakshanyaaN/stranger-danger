@@ -26,8 +26,10 @@ The system is fully local, requires no cloud services, and stores all facial dat
 
 ---
 
+
 ## Demo
-## Demo
+
+> The following screenshots illustrate key stages of the system during runtime.
 
 ### Face Detection
 ![Detection](assets/detection.png)
@@ -35,7 +37,8 @@ The system is fully local, requires no cloud services, and stores all facial dat
 ### Warning Prompt
 ![Warning](assets/warning.png)
 
-
+Due to the fullscreen lock behavior, the lock interface cannot be reliably captured using standard screenshot or screen recording tools.
+Once triggered, the system takes over the screen and requires the correct code to regain access.
 
 ---
 
