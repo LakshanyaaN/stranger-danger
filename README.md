@@ -35,8 +35,7 @@ The system is fully local, requires no cloud services, and stores all facial dat
 ### Warning Prompt
 ![Warning](assets/warning.png)
 
-### Lock Screen
-![Lock](assets/lock.png)
+
 
 ---
 
