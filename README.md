@@ -228,4 +228,4 @@ In Tokyo Ghoul, Ken Kaneki is subjected to repeated torture and conditioned to c
 
 MIT License : free to use, modify, and distribute.
 
-Built by [Lakshanya](https://github.com/LakshanyaaN)
+Built by [LakshanyaN](https://github.com/LakshanyaaN)
