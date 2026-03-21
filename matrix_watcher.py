@@ -1,10 +1,10 @@
 """
-kaneki_watcher.py
+matrix_watcher.py
 -----------------
 Watches your webcam. If YOUR face disappears OR a stranger appears
 for more than TRIGGER_DELAY seconds, a warning window appears.
 Type the cancel code within WARNING_DURATION seconds to abort.
-Otherwise, kaneki_countdown.exe launches.
+Otherwise, matrix_countdown.exe launches.
 
 TERMINAL COMMANDS (type anytime while running):
   pause   -> disable the watcher until you resume
@@ -12,7 +12,7 @@ TERMINAL COMMANDS (type anytime while running):
   status  -> check if watcher is active or paused
   quit    -> stop the watcher entirely
 
-Put this file in the SAME folder as kaneki_countdown.exe.
+Put this file in the SAME folder as matrix_countdown.exe.
 """
 
 import cv2
@@ -27,7 +27,7 @@ import tkinter as tk
 #  SETTINGS
 TRIGGER_DELAY        = 5       # seconds of no-face/stranger before warning
 WARNING_DURATION     = 5       # seconds to type cancel code before launch
-CANCEL_CODE          = "redpill"  # code to cancel warning
+CANCEL_CODE          = "your_code_here"  # code to cancel warning, out in your code word!
 CAMERA_INDEX         = 0
 ENROLL_FRAMES        = 60
 CONFIDENCE_THRESHOLD = 70
