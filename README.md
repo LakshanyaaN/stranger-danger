@@ -38,6 +38,20 @@ Just you, your camera, and a system that takes its job a little too seriously.
 - Hidden password input with blinking cursor
 - Runs quietly in the background
 - Optional auto-start on boot (if you fully commit to the bit)
+  
+---
+
+## Demo
+
+> The following screenshots illustrate key stages of the system during runtime.
+
+### Face Detection
+![Detection](assets/detection.png)
+
+### Warning Prompt
+![Warning](assets/warning.png)
+
+> Note: The fullscreen lock interface cannot be reliably captured using standard screenshot or screen recording tools due to its rendering behavior and focus control.
 
 ---
 
