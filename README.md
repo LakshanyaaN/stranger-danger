@@ -104,7 +104,15 @@ This generates an executable inside the `dist/` directory.
 ### 4. Prepare runtime directory
 
 Move `kaneki_watcher.py` into the `dist/` folder so both components reside together.
+```
+dist/
+├── kaneki_countdown.exe
+└── kaneki_watcher.py
+```
 
+> Important: The watcher script must be located in the same folder as the executable.  
+> The system launches the lock mechanism from this directory, and it will fail if the files are separated.
+> If you modify file names or locations, update the path in the watcher script accordingly.
 ---
 
 ### 5. Run the system
