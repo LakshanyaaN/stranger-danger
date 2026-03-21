@@ -4,12 +4,12 @@ import time
 import sys
 import pyttsx3
 
-# --- SETTINGS ---
+#SETTINGS 
 NORMAL_DURATION   = 8    # seconds of normal rain
 OVERLOAD_DURATION = 4    # seconds of overload before flash
-UNLOCK_CODE       = "redpill"
+UNLOCK_CODE       = "your_code_here" #put in a code of your choice!"
 
-# --- INITIALIZE PYGAME ---
+# INITIALIZE PYGAME
 pygame.init()
 screen = pygame.display.set_mode((0, 0), pygame.FULLSCREEN)
 WIDTH, HEIGHT = screen.get_size()
@@ -18,30 +18,30 @@ clock = pygame.font.init() or pygame.time.Clock()
 pygame.font.init()
 clock = pygame.time.Clock()
 
-# --- TTS ---
+#TTS
 engine = pyttsx3.init()
 engine.say("1000 minus 7")
 engine.runAndWait()
 
-# --- COLORS ---
+#COLORS
 BLACK  = (0, 0, 0)
 GREEN  = (0, 255, 100)
 DIM    = (0, 80, 0)
 BRIGHT = (200, 255, 200)
 RED    = (255, 0, 0)
 
-# --- CHARACTERS ---
+#CHARACTERS
 katakana = [chr(i) for i in range(0x30A0, 0x30FF)]
 chars    = katakana + list("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@#$%^&*")
 
-# --- FONTS ---
+#FONTS
 font_size    = 18
 font         = pygame.font.SysFont("courier", font_size, bold=True)
 overlay_font = pygame.font.SysFont("courier", 72, bold=True)
 small_font   = pygame.font.SysFont("courier", 32, bold=True)
 
 
-# ── Helper: make a stream ────────────────────
+#Helper: make a stream
 
 def make_stream(x, fast=False):
     length = random.randint(15, 35)
@@ -75,8 +75,7 @@ def draw_streams(streams):
             s["chars"][idx] = random.choice(chars)
 
 
-# ── Phase 1: Normal rain ─────────────────────
-
+#Phase 1: Normal rain
 columns = WIDTH // font_size
 streams = [make_stream(i * font_size) for i in range(columns)]
 
@@ -91,7 +90,7 @@ while time.time() - start < NORMAL_DURATION:
     clock.tick(30)
 
 
-# ── Phase 2: Overload ────────────────────────
+# Phase 2: Overload
 
 # Add 3x fast streams at random positions
 for _ in range(columns * 3):
@@ -116,7 +115,7 @@ while time.time() - start < OVERLOAD_DURATION:
     clock.tick(30)
 
 
-# ── Phase 3: Flash → Black ───────────────────
+#Phase 3: Flash to Black
 
 for color in [(255, 255, 255), (180, 180, 180), (80, 80, 80), (0, 0, 0)]:
     screen.fill(color)
@@ -124,7 +123,7 @@ for color in [(255, 255, 255), (180, 180, 180), (80, 80, 80), (0, 0, 0)]:
     time.sleep(0.07)
 
 
-# ── Phase 4: ACCESS DENIED lockscreen ────────
+#Phase 4: ACCESS DENIED lockscreen
 
 # Sparse slow background streams
 bg_streams = [make_stream(i * font_size * 3) for i in range(columns // 3)]
