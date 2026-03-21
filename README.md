@@ -7,7 +7,7 @@
 
 # Stranger Danger
 
-> A slightly dramatic system that locks your screen when a stranger shows up — because why should they get access *and* a normal experience?
+> A slightly dramatic system that locks your screen when a stranger shows up, because why should they get access *and* a normal experience?
 
 ---
 
@@ -15,13 +15,15 @@
 
 Stranger Danger is a fun (and mildly paranoid) real-time face recognition project that watches your webcam while you work.
 
-If it sees someone it doesn't recognize — or notices that you've mysteriously disappeared — it doesn't just sit there quietly.  
+If it sees someone it doesn't recognize or notices that you've mysteriously disappeared
+It doesn't just sit there quietly.  
 It escalates.
 
 First, a warning.  
 Then… a full cinematic Matrix-style lockdown.
 
-Everything runs locally, no cloud, no data sharing — just you, your camera, and a system that takes its job a little too seriously.
+Everything runs locally, no cloud, no data sharing.
+Just you, your camera, and a system that takes its job a little too seriously.
 
 ---
 
@@ -222,14 +224,15 @@ Also a fun way to explore:
 
 ## Inspiration
 
-Inspired by *The Matrix* — but instead of saving the world, it just aggressively protects your screen.
+Inspired by *The Matrix*
+But instead of saving the world, it just aggressively protects your screen!
 
 ---
 
 ## License
 
-MIT License — free to use, modify, and distribute.
+MIT License: free to use, modify, and distribute.
 
 ---
 
-Built by [Lakshanya](https://github.com/LakshanyaaN)
+Built by [LakshanyaN](https://github.com/LakshanyaaN)
